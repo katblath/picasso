@@ -1,0 +1,350 @@
+/* they say mobile first so this is it  */
+/* the easiest way to notice the responsive design is that the side gutters 
+grow larger as the screen size grows and they change colors */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+    margin: 5px;
+  }
+  footer {
+    height: 1vh;
+  }
+  .sec1 {
+    background-color: aliceblue;
+  }
+  /* heres the grid, you can find px, vh and % used for css units */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 1fr));
+    grid-template-rows: 30vh 30vh 30vh 10vh;
+    grid-template-areas:
+      "sky sky sky sky sky sky"
+      "main main main main main main"
+      "main main main main main main"
+      "foot foot foot foot foot foot";
+    gap: 2% 2%;
+  }
+  .sky1 {
+    background-color: aquamarine;
+    grid-area: 1 / 1 / 2 / 3;
+    z-index: 1;
+  }
+
+  .sky2 {
+    background-color: aquamarine;
+    grid-area: 1 / 3 / 2/ 5;
+  }
+  .sky3 {
+    background-color: aquamarine;
+    grid-area: 1 / 5/ 2/ 7;
+  }
+  .sky4 {
+    background-color: aquamarine;
+    grid-area: 2 / 1 / 4 / 7;
+  }
+  .sky5 {
+    background-color: #7fff00;
+    grid-area: 4 / 1 / 5 / 7;
+  }
+  .sun {
+    z-index: 2;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .sun2 {
+    z-index: 3;
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #ff5733;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+  article {
+    grid-area: 2 / 3 / 5 / 7;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: red;
+    margin: 25px;
+  }
+  footer {
+    height: 1vh;
+  }
+  .sec1 {
+    background-color: aliceblue;
+  }
+  /* heres the grid, you can find px, vh and % used for css units */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 1fr));
+    grid-template-rows: 30vh 30vh 30vh 10vh;
+    grid-template-areas:
+      "sky sky sky sky sky sky"
+      "main main main main main main"
+      "main main main main main main"
+      "foot foot foot foot foot foot";
+    gap: 2% 2%;
+  }
+  .sky1 {
+    background-color: aquamarine;
+    grid-area: 1 / 1 / 2 / 3;
+    z-index: 1;
+  }
+
+  .sky2 {
+    background-color: aquamarine;
+    grid-area: 1 / 3 / 2/ 5;
+  }
+  .sky3 {
+    background-color: aquamarine;
+    grid-area: 1 / 5/ 2/ 7;
+  }
+  .sky4 {
+    background-color: aquamarine;
+    grid-area: 2 / 1 / 4 / 7;
+  }
+  .sky5 {
+    background-color: #7fff00;
+    grid-area: 4 / 1 / 5 / 7;
+  }
+  .sun {
+    z-index: 2;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .sun2 {
+    z-index: 3;
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #ff5733;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+  article {
+    grid-area: 2 / 3 / 4 / 6;
+    justify-self: center;
+    align-self: center;
+  }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: green;
+    margin: 35px;
+  }
+  footer {
+    height: 1vh;
+  }
+  .sec1 {
+    background-color: aliceblue;
+  }
+  /* heres the grid, you can find px, vh and % used for css units */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 1fr));
+    grid-template-rows: 30vh 30vh 30vh 10vh;
+    grid-template-areas:
+      "sky sky sky sky sky sky"
+      "main main main main main main"
+      "main main main main main main"
+      "foot foot foot foot foot foot";
+    gap: 2% 2%;
+  }
+  .sky1 {
+    background-color: aquamarine;
+    grid-area: 1 / 1 / 2 / 3;
+    z-index: 1;
+  }
+
+  .sky2 {
+    background-color: aquamarine;
+    grid-area: 1 / 3 / 2/ 5;
+  }
+  .sky3 {
+    background-color: aquamarine;
+    grid-area: 1 / 5/ 2/ 7;
+  }
+  .sky4 {
+    background-color: aquamarine;
+    grid-area: 2 / 1 / 4 / 7;
+  }
+  .sky5 {
+    background-color: #7fff00;
+    grid-area: 4 / 1 / 5 / 7;
+  }
+  .sun {
+    z-index: 2;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .sun2 {
+    z-index: 3;
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #ff5733;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+  article {
+    grid-area: 2 / 3 / 4 / 6;
+    justify-self: center;
+    align-self: center;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: #ffac1c;
+    margin: 55px;
+  }
+  footer {
+    height: 1vh;
+  }
+  .sec1 {
+    background-color: aliceblue;
+  }
+  /* heres the grid, you can find px, vh and % used for css units */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 1fr));
+    grid-template-rows: 30vh 30vh 30vh 10vh;
+    grid-template-areas:
+      "sky sky sky sky sky sky"
+      "main main main main main main"
+      "main main main main main main"
+      "foot foot foot foot foot foot";
+    gap: 2% 2%;
+  }
+  .sky1 {
+    background-color: aquamarine;
+    grid-area: 1 / 1 / 2 / 3;
+    z-index: 1;
+  }
+
+  .sky2 {
+    background-color: aquamarine;
+    grid-area: 1 / 3 / 2/ 5;
+  }
+  .sky3 {
+    background-color: aquamarine;
+    grid-area: 1 / 5/ 2/ 7;
+  }
+  .sky4 {
+    background-color: aquamarine;
+    grid-area: 2 / 1 / 4 / 7;
+  }
+  .sky5 {
+    background-color: #7fff00;
+    grid-area: 4 / 1 / 5 / 7;
+  }
+  .sun {
+    z-index: 2;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .sun2 {
+    z-index: 3;
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #ff5733;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+  article {
+    grid-area: 2 / 3 / 4 / 6;
+    justify-self: center;
+    align-self: center;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: #a020f0;
+    margin: 75px;
+  }
+  footer {
+    height: 1vh;
+  }
+  .sec1 {
+    background-color: aliceblue;
+  }
+  /* heres the grid, you can find px, vh and % used for css units */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(90px, 1fr));
+    grid-template-rows: 30vh 30vh 30vh 10vh;
+    grid-template-areas:
+      "sky sky sky sky sky sky"
+      "main main main main main main"
+      "main main main main main main"
+      "foot foot foot foot foot foot";
+    gap: 2% 2%;
+  }
+  .sky1 {
+    background-color: aquamarine;
+    grid-area: 1 / 1 / 2 / 3;
+    z-index: 1;
+  }
+
+  .sky2 {
+    background-color: aquamarine;
+    grid-area: 1 / 3 / 2/ 5;
+  }
+  .sky3 {
+    background-color: aquamarine;
+    grid-area: 1 / 5/ 2/ 7;
+  }
+  .sky4 {
+    background-color: aquamarine;
+    grid-area: 2 / 1 / 4 / 7;
+  }
+  .sky5 {
+    background-color: #7fff00;
+    grid-area: 4 / 1 / 5 / 7;
+  }
+  .sun {
+    z-index: 2;
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: #ffff00;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .sun2 {
+    z-index: 3;
+    grid-area: 1 / 3 / 2 / 4;
+    background-color: #ff5733;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-self: center;
+    align-self: center;
+  }
+  article {
+    grid-area: 2 / 3 / 4 / 6;
+    justify-self: center;
+    align-self: center;
+  }
+}
