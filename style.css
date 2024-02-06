@@ -64,8 +64,20 @@ grow larger as the screen size grows and they change colors */
     justify-self: center;
     align-self: center;
   }
+  .arrow-up {
+    grid-area: 3 / 3 / 4 / 7;
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid #77dd77;
+    z-index: 4;
+  }
   article {
     grid-area: 2 / 3 / 5 / 7;
+    justify-self: center;
+    align-self: center;
+    z-index: 5;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -132,7 +144,17 @@ grow larger as the screen size grows and they change colors */
     justify-self: center;
     align-self: center;
   }
+  .arrow-up {
+    grid-area: 3 / 3 / 4 / 7;
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid #77dd77;
+    z-index: 4;
+  }
   article {
+    z-index: 5;
     grid-area: 2 / 3 / 4 / 6;
     justify-self: center;
     align-self: center;
@@ -202,10 +224,20 @@ grow larger as the screen size grows and they change colors */
     justify-self: center;
     align-self: center;
   }
+  .arrow-up {
+    grid-area: 3 / 3 / 4 / 7;
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid #77dd77;
+    z-index: 4;
+  }
   article {
     grid-area: 2 / 3 / 4 / 6;
     justify-self: center;
     align-self: center;
+    z-index: 5;
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -272,10 +304,20 @@ grow larger as the screen size grows and they change colors */
     justify-self: center;
     align-self: center;
   }
+  .arrow-up {
+    grid-area: 3 / 3 / 4 / 7;
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid #77dd77;
+    z-index: 4;
+  }
   article {
     grid-area: 2 / 3 / 4 / 6;
     justify-self: center;
     align-self: center;
+    z-index: 5;
   }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -342,9 +384,19 @@ grow larger as the screen size grows and they change colors */
     justify-self: center;
     align-self: center;
   }
+  .arrow-up {
+    grid-area: 3 / 3 / 4 / 7;
+    width: 0;
+    height: 0;
+    border-left: 180px solid transparent;
+    border-right: 180px solid transparent;
+    border-bottom: 180px solid #77dd77;
+    z-index: 4;
+  }
   article {
     grid-area: 2 / 3 / 4 / 6;
     justify-self: center;
     align-self: center;
+    z-index: 5;
   }
 }
